@@ -39,12 +39,13 @@ nav li a {
   font-weight: 800;
   font-size: 45px;
 }
+
 /* share style  */
 .text-primary {
   color: #fd6e0a;
 }
-.secondary-bg{
-  background-color: #FFF8F3;
+.secondary-bg {
+  background-color: #fff8f3;
 }
 .dark-2 {
   color: #474747;
@@ -71,7 +72,11 @@ nav li a {
 }
 .section-description {
   color: #757575;
-  font-size: 18px;
+  font-size: 16px;
+  /* line-height: 28px; */
+}
+.text-center {
+  text-align: center;
 }
 
 /* Banner style */
@@ -102,4 +107,88 @@ nav li a {
 .img {
   height: 676px;
   width: 584px;
+}
+/* main style  */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* About section  */
+.about {
+  border-radius: 10px;
+  padding: 130px 150px;
+  text-align: center;
+  margin-top: 130px;
+  border: 1px solid #000000;
+}
+.about-sub {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.about-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+
+.item-title {
+  margin-bottom: 0;
+  /* padding-bottom: 0; */
+}
+.item-description {
+  margin-top: 0;
+  font-weight: 600;
+}
+/* what i do section */
+.what-title {
+  margin: 136px 370px 30px;
+}
+.what-description {
+  margin-top: 30px;
+  margin-left: 170px;
+  margin-right: 120px;
+  margin-bottom: 50px;
+}
+
+/* skills items start */
+.skill-container {
+  display: flex;
+  /* justify-content: space-between */
+  /* margin: 50px 100px 80px 100px; */
+  margin-top: 50px;
+  margin-bottom: 150px;
+  margin-left: 120px;
+  margin-right: 120px;
+  gap: 24px;
+}
+.skill-item {
+  background-color: #ffffff;
+  box-shadow: 0px 6px 50px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  padding: 20px;
+}
+/* resume section */
+.resume-container {
+  display: flex;
+  gap: 24px;
+  margin: 80px 120px 50px 120px;
+}
+.experience-description,
+.experience-sub-title {
+  color: #757575;
+}
+.experience-title,
+.resume-coloum-title {
+  color: #474747;
+}
+.experience-sub-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+/* download cv button */
+.button{
+  text-align: center;
 }
