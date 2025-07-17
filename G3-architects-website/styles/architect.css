@@ -1,0 +1,132 @@
+/* font word sans */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* universal section */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.dark-1 {
+  color: rgba(19, 19, 19, 1);
+}
+
+.dark-2 {
+  color: rgba(66, 66, 66, 1);
+}
+.dark-3 {
+  color: rgba(114, 114, 114, 1);
+}
+
+.section-title {
+  font-size: 2.85rem;
+  font-weight: bold;
+}
+.title-description {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 20px auto;
+}
+.btn {
+  background-color: #ff900e;
+  color: #fff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+/* Header section */
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+  padding-top: 50px;
+
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1165px;
+  margin: 0 auto;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+.nav-items a {
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* brand name section */
+.brand-contain {
+  max-width: 1165px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.brand-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+.brand-name-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 103px;
+}
+
+.brand-img {
+  width: 100%;
+  height: auto;
+  max-width: 1165px;
+  margin-bottom: 20px;
+}
+
+/* small device  */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .brand-name-title {
+    font-size: 2.2rem;
+    margin-top: 40px;
+  }
+  .btn {
+    padding: 20px 60px;
+  }
+}
+/* meduim device */
+@media screen and (min-width: 576px) and (max-width: 990px) {
+  .navbar,
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .brand-name-title {
+    font-size: 2.5rem;
+    margin-top: 40px;
+  }
+  .btn {
+    padding: 20px 60px;
+  }
+}
