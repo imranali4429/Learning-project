@@ -30,10 +30,11 @@
   font-weight: bold;
 }
 .title-description {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 400;
-  margin: 20px auto;
+  margin: 20px 0;
 }
+
 .btn {
   background-color: #ff900e;
   color: #fff;
@@ -44,21 +45,27 @@
   border: none;
   cursor: pointer;
 }
+.display-flex {
+  display: flex;
+}
+/* experience title */
+.item-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  /* max-width: 210px; */
+}
 
 /* Header section */
 header {
   background-color: rgba(255, 144, 14, 0.1);
   padding-top: 50px;
-
 }
 .navbar {
-  display: flex;
   justify-content: space-between;
   max-width: 1165px;
   margin: 0 auto;
 }
 .nav-items {
-  display: flex;
   align-items: center;
   gap: 30px;
   list-style: none;
@@ -72,12 +79,10 @@ header {
 .brand-contain {
   max-width: 1165px;
   margin: 0 auto;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
 .brand-container {
-  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -94,7 +99,115 @@ header {
   width: 100%;
   height: auto;
   max-width: 1165px;
+  /* margin-bottom: 20px; */
+}
+
+/* features section */
+.features {
+  width: 1070px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 60px;
+  margin-top: 70px;
+  margin-bottom: 105px;
+}
+
+.features-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.img-item {
+  width: 100%;
+  height: auto;
+  max-width: 277px;
+}
+.features-contest {
+  max-width: 400px;
+  max-height: 245px;
+  margin-top: 163px;
+  margin-bottom: 163px;
+  margin-right: 100px;
+}
+.quick-list {
+  font-size: 2.76rem;
+  font-weight: 500;
+}
+.of-our {
+  font-size: 2.76rem;
+  font-weight: bold;
+}
+.Features-end {
+  color: #ff900e;
+  font-size: 2.85rem;
+  font-weight: bold;
+}
+
+/* experience section */
+.experience-context {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  /* height: auto; */
+  margin-left: 20px;
+}
+.experience-container {
+  max-width: 1165px;
+  margin: 50px auto;
+  gap: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+}
+.experience-title {
+  /* width: 460px; */
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+
+.experience-item {
+  /* max-width: 500px; */
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  margin-bottom: 10px;
+}
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+.item-description {
+  margin: 10px 0;
+}
+.img-container {
+  position: relative;
+  /* max-width: 795px; */
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.experience-img {
+  height: auto;
+  width: 100%;
+  /* margin-bottom: 50px; */
+}
+.experience-year {
+  position: absolute;
+  /* max-width: 277px; */
+  background-color: #ff900e;
+  /* max-height: 162px; */
+  padding: 25px 30px;
+  text-align: center;
+  margin-top: -100px;
+  margin-left: -74px;
+
+  border-radius: 8px;
+}
+.experience-year h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  color: #fff;
+}
+.experience-year p {
+  color: #fff;
 }
 
 /* small device  */
@@ -112,7 +225,72 @@ header {
   .btn {
     padding: 20px 60px;
   }
+  .features {
+    width: 100%;
+    margin: 20px auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+  .features-img {
+    grid-template-columns: 1fr;
+  }
+  .features-contest {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .quick-list,
+  .of-our,
+  .Features-end {
+    font-size: 1.8rem;
+  }
+  .title-description {
+    font-size: 1rem;
+    margin: 10px auto;
+    max-width: 277px;
+  }
+  /* experience */
+  .experience-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .experience-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .experience-description {
+    max-width: auto;
+    padding: 20px;
+  }
+  .item-description {
+    text-align: left;
+    max-width: auto;
+  }
+  .experience-context {
+    text-align: center;
+    margin: 0 30px;
+  }
+  .experience-item {
+    margin: 0;
+    text-align: center;
+  }
+  .experience-year {
+    margin-top: 0;
+    margin-left: 120px;
+    padding: 10px;
+    margin-bottom: 500px;
+  }
+  .experience-year h1 {
+    font-size: 2.5rem;
+    padding: 0px 30px;
+  }
+  .img-container {
+    text-align: center;
+  }
 }
+
 /* meduim device */
 @media screen and (min-width: 576px) and (max-width: 990px) {
   .navbar,
@@ -128,5 +306,16 @@ header {
   }
   .btn {
     padding: 20px 60px;
+  }
+  .features {
+    width: 100%;
+    margin: 40px auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .features-contest {
+    text-align: center;
+    margin: 0 auto;
   }
 }
