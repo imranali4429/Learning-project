@@ -94,6 +94,10 @@ header {
   font-weight: 700;
   margin-top: 103px;
 }
+.brand-description {
+  max-width: 600px;
+  margin: 25px auto;
+}
 
 .brand-img {
   width: 100%;
@@ -104,12 +108,13 @@ header {
 
 /* features section */
 .features {
-  width: 1070px;
+  width: 1165px;
   margin: 0 auto;
   align-items: center;
   gap: 60px;
   margin-top: 70px;
   margin-bottom: 105px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .features-img {
@@ -208,7 +213,113 @@ header {
   color: #fff;
 }
 
-/* small device  */
+/* some facts section */
+.some-facts {
+  max-width: 1165px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.facts-title {
+  font-size: 2.85rem;
+  font-weight: bold;
+  text-align: center;
+}
+.some-facts-description {
+  max-width: 600px;
+  text-align: center;
+  margin: 25px auto;
+}
+
+.facts-card-container {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.facts-card {
+  max-width: 196px;
+  max-height: 196px;
+  /* background-color: red; */
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+}
+.awards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid rgba(0, 0, 0, 0.1); */
+  margin-top: 29px;
+  margin-bottom: 41px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.facts-img {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
+}
+.facts-number {
+  font-size: 2.2rem;
+  font-weight: semibold;
+}
+.facts-description {
+  font-size: 1rem;
+  font-weight: semibold;
+  text-align: center;
+}
+
+/* -------------------sponspors section----------------- */
+
+.sponspors {
+  max-width: 1165px;
+  margin: 0 auto;
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.sponspors-title {
+  text-align: center;
+}
+.sponspors-description {
+  text-align: center;
+  max-width: 440px;
+  margin: 35px auto;
+}
+.sponspors-container {
+  display: flex;
+  justify-content: space-around;
+  /* gap: 125px; */
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.sponspors-img {
+  max-width: 125px;
+  margin: 0 auto;
+  filter: grayscale(100%);
+}
+
+/* -----------footer section -------------- */
+.footer {
+  background-color: #fff4e7;
+  max-width: 1165px;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.footer-description {
+  /* margin: 35px auto; */
+  text-align: center;
+  padding: 25px;
+  margin: 0px;
+}
+
+/* ----------------small device---------------------------  */
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-items {
@@ -283,6 +394,28 @@ header {
     font-size: 2.5rem;
     padding: 0px 30px;
   }
+  /* facts-card */
+
+  .facts-card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* ---------------sponsspor--------------- */
+  .sponspors-img {
+    margin: 15px;
+  }
+  .footer-description {
+    padding: 0px;
+  }
+  .footer {
+    margin-bottom: 15px;
+  }
+  .brand-description {
+    max-width: 500px;
+    margin: 25px auto;
+  }
 }
 
 /* meduim device */
@@ -295,7 +428,7 @@ header {
   }
 
   .brand-name-title {
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     margin-top: 40px;
   }
   .btn {
@@ -327,6 +460,17 @@ header {
     font-size: 2rem;
   }
   .experience-context {
-    margin:20px
+    margin: 20px;
   }
-} 
+  .facts-card-container {
+    flex-wrap: wrap;
+  }
+  .facts-card {
+    flex: 1 1 calc(50% - 100px);
+    box-sizing: border-box;
+  }
+  /* ---------------sponsspor--------------- */
+  .sponspors-img {
+    margin: 20px;
+  }
+}
