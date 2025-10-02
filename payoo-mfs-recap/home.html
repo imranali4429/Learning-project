@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payoo Mfs recap</title>
+    <!-- daisy ul with tailwind  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- -------------------------------------------------------------- -->
+  </head>
+  <body>
+    <main>
+      <div class="mockup-phone">
+        <div class="mockup-phone-camera"></div>
+        <div
+          class="mockup-phone-display bg-slate-100 text-white grid place-content-center"
+        >
+          <!--balance statt  -->
+          <div class="stats shadow-xl shadow-gray-400 bg-gray-200 mb-4">
+            <div class="stat">
+              <div
+                class="stat-title text-lg rounded-2xl text-center shadow shadow-gray-900 font-bold"
+              >
+                Total Balance
+              </div>
+              <div id="total-balance" class="stat-value text-black text-center">
+                9400
+              </div>
+            </div>
+          </div>
+          <!-- balance end -->
+          <!-- choice option start  -->
+
+          <div
+            class="mt-2 shadow-xl shadow-gray-400 bg-gray-200 p-4 rounded-lg"
+          >
+            <h1
+              class="text-black mb-2 mt-0 rounded-2xl text-center text-xl shadow shadow-gray-900 font-bold"
+            >
+              Choose Option
+            </h1>
+            <div class="w-full grid grid-cols-2 gap-4">
+              <button class="btn btn-outline btn-primary">Add Money</button>
+              <button class="btn btn-outline btn-primary">Cash Out</button>
+              <button class="btn btn-outline btn-primary">Bill Pay</button>
+              <button class="btn btn-outline btn-primary">Recharges</button>
+            </div>
+          </div>
+
+          <!-- choice option end -->
+
+          <!-- add money from start  -->
+          <div
+            class="hidden card mt-3 bg-amber-400 w-full max-w-sm shrink-0 shadow-2xl space-y-0"
+          >
+            <div
+              class="card-body bg-red-400 rounded-lg shadow-2xl shadow-red-400"
+            >
+              <fieldset class="fieldset pt-0">
+                <label
+                  for="head"
+                  class="font-bold text-black text-2xl shadow shadow-orange-900 rounded-2xl text-center"
+                  >Add Money</label
+                >
+                <label class="label text-black">Amount</label>
+                <input
+                  id="add-money-input"
+                  type="text"
+                  class="input text-black"
+                  placeholder="Add Money Amount"
+                />
+                <label class="label text-black">Password</label>
+                <input
+                  id="add-money-password-input"
+                  type="password"
+                  class="input text-black"
+                  placeholder="Pin or Password"
+                />
+
+                <button id="add-money-button" class="btn btn-neutral mt-4">
+                  Add Money
+                </button>
+              </fieldset>
+            </div>
+          </div>
+          <!-- add money from end  -->
+          <!-- cash out start -->
+          <div
+            class="card mt-3 bg-amber-400 w-full max-w-sm shrink-0 shadow-2xl space-y-0"
+          >
+            <div
+              class="card-body bg-red-400 rounded-lg shadow-2xl shadow-red-400"
+            >
+              <fieldset class="fieldset pt-0">
+                <label
+                  for="head"
+                  class="font-bold text-black text-2xl shadow shadow-orange-900 rounded-2xl text-center"
+                  >Cash Out</label
+                >
+                <label class="label text-black">Agent Mobile Number</label>
+                <input
+                  id="cashout-agent-mobile-number"
+                  type="text"
+                  class="input text-black"
+                  placeholder="Agent Mobile  Number"
+                />
+                <label class="label text-black">Amount</label>
+                <input
+                  id="cashout-money-input"
+                  type="text"
+                  class="input text-black"
+                  placeholder="Cash out Amount"
+                />
+                <label class="label text-black">Password</label>
+                <input
+                  id="cashout-password-input"
+                  type="password"
+                  class="input text-black"
+                  placeholder="Pin or Password"
+                />
+
+                <button id="cashout-money-button" class="btn btn-neutral mt-4">
+                  Cash Out
+                </button>
+              </fieldset>
+            </div>
+          </div>
+          <!-- cash out end -->
+        </div>
+      </div>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/add_money.js"></script>
+    <script src="js/cashOut.js"></script>
+  </body>
+</html>
