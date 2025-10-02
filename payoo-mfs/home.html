@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payoo Home Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awaesome -->
+    <script
+      src="https://kit.fontawesome.com/1c4fcbd977.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="mockup-phone border-primary">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-1 space-x-2">
+            <!-- available Balance start  -->
+            <div class="stats bg-base-100 border">
+              <div class="stat">
+                <div id="available-balance" class="stat-value text-2xl">
+                  <i class="fa-solid fa-check"></i>9400
+                </div>
+                <div class="stat-title font-light">Account balance</div>
+              </div>
+            </div>
+            <!-- welcome to payoo start -->
+            <div
+              class="mx-auto text-left bg-slate-100 shadow-gray-300 rounded-lg p-2 mt-1"
+            >
+              <h3><i class="fa-solid fa-fire"></i>Welcome to Payoo</h3>
+              <p class="text-xs">
+                Enjoy easy and convenient financial services with us. Cashout
+                charge is low and
+              </p>
+            </div>
+            <!-- welcome to payoo end -->
+
+            <!-- available balance end -->
+            <!-- divider start  -->
+            <div class="divider m-0"></div>
+            <!-- divider end -->
+            <!-- option start -->
+            <div class="grid grid-cols-2 gap-x-4">
+              <button id="btn-show-add-money" class="btn bg-white border-2">
+                <i class="fa-solid fa-sack-dollar font-bold"></i> Add Money
+              </button>
+              <button class="btn bg-white border-2">
+                <i class="fa-solid fa-share"></i>Send Money
+              </button>
+              <button id="btn-show-cashout" class="btn bg-white border-2">
+                <i class="fa-solid fa-sack-dollar font-bold"></i>Cash Out
+              </button>
+              <button class="btn bg-white border-2">
+                <i class="fa-solid fa-sack-dollar font-bold"></i>Pay Bill
+              </button>
+            </div>
+            <!-- option end -->
+
+            <!-- add money  start-->
+            <div
+              id="add-money-modal"
+              class="bg-cyan-400 max-w-min space-y-0 rounded-lg mt-2 mb-2 rounded-b-3xl"
+            >
+              <div class="card-body pt-1 pb-3">
+                <h3 class="text-lg">Add Money</h3>
+                <fieldset class="fieldset bg-slate-400 p-3 rounded-lg">
+                  <label class="">Amount to Add</label>
+                  <input
+                    id="add-money-amount"
+                    type="text"
+                    class="input max-h-8"
+                    placeholder="Enter Amount "
+                    autocomplete="off"
+                  />
+                  <label class="label">password</label>
+                  <input
+                    type="password"
+                    class="input max-h-8"
+                    id="input-password"
+                    placeholder="Enter password"
+                    autocomplete="new-password"
+                  />
+
+                  <button
+                    type="submit"
+                    id="btn-add-money"
+                    class="btn w-full bg-slate-500 mt-4 rounded-full text-black"
+                  >
+                    Add Money
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+            <!-- add money end -->
+
+            <!-- cash out start -->
+            <div
+              id="cashout-modal"
+              class="hidden bg-cyan-400 max-w-min space-y-0 rounded-lg mt-2 mb-2 rounded-b-3xl"
+            >
+              <div class="card-body pt-1 pb-3">
+                <h3 class="text-lg">Cash Out</h3>
+                <fieldset class="fieldset bg-slate-400 p-3 rounded-lg">
+                  <label class="">Amount to Cash Out</label>
+                  <input
+                    id="add-cashout"
+                    type="text"
+                    class="input max-h-8"
+                    placeholder="Enter Amount "
+                    autocomplete="off"
+                  />
+                  <label class="label">password</label>
+                  <input
+                    type="password"
+                    class="input max-h-8"
+                    id="cashout-password"
+                    placeholder="Enter password"
+                    autocomplete="new-password"
+                  />
+
+                  <button
+                    type="submit"
+                    id="btn-cashout"
+                    class="btn w-full bg-slate-500 mt-4 rounded-full text-black"
+                  >
+                    Cash Out
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+            <!-- cash out end -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/home.js"></script>
+    <script src="js/cashout.js"></script>
+    <script src="js/features.js"></script>
+  </body>
+</html>
